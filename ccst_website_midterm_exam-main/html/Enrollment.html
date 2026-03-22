@@ -7,15 +7,30 @@
  <link rel="icon" type="image/png" sizes="32x32" href="images/434206019_951704663627954_202197592447994371_n-removebg-preview.png">
 
  <style> 
+ .parent-navbar{
+        background-color: #0306dd;
+        color: white;
+        display: flex;
+        padding: 10px 15px;
+        justify-content: space-between ;
+    }
+ .nav-link{
+        color: black;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .children-navbar{
 
+    }
  body {  
  font-family: Arial, sans-serif;  
- background:linear-gradient(white, rgb(28, 188, 241), black); ;  
- display: flex;  
+ background:linear-gradient(white, rgb(28, 188, 241), black); ; 
+ display: block;  
  justify-content: center;  
  align-items: center;  
  min-height: 100vh;  
- margin: 0;  
+ margin: 0;
  }  
 
  .container {  
@@ -131,13 +146,30 @@
  cursor: pointer;  
  }  
  </style>  
-  </head>  
-  <body> 
- <div class="container">  
- <h1>College Enrollment Form</h1>  
- <form action="#" method="post">  
- <div class="form-group">  
- <label for="firstName">First Name</label>  
+  </head>
+  <nav class="parent-navbar">
+        <div class="children-navbar"><a href="index.html"><img style="height: 40px; width: 220px;" src="images/cropped-whit-bg-1-259x48.png" alt=""></a></div>
+        <div class="children-navbar">
+            <a href="index.html" class="nav-link"><b>HOME</b></a>
+            <a href="lesson.html" class="nav-link"><b>LESSONS</b></a>
+            <a href="" class="nav-link"><b>ABOUT US</b></a>
+        </div>
+    </nav>  
+
+  <body>
+    
+    
+ <div class="container">
+
+ <h1>College Enrollment Form</h1>
+
+
+ <form action="#" method="post"> 
+
+ <div class="form-group">
+
+ <label for="firstName">First Name</label> 
+
  <input type="text" id="firstName" name="firstName" required>  
  </div>  
  <div class="form-group">  
@@ -148,6 +180,11 @@
  <label for="lastName">Last Name</label>  
  <input type="text" id="lastName" name="lastName required">  
  </div>
+ 
+
+
+
+
 
  <div class="form-group">  
  <label for="birthday">Birthday</label>  
@@ -256,8 +293,15 @@
  <div class="button-group">  
  <button type="submit">Submit</button>  
  <button type="button" class="clear-button">Clear</button>  
- </div>  
- </form>  
- </div>  
+ </div> 
+  
+ </form>
+ </div> 
+ 
+ 
+
+
+
+
   </body>  
   </html>
