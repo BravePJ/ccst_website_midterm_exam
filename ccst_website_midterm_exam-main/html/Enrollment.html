@@ -7,18 +7,24 @@
  <link rel="icon" type="image/png" sizes="32x32" href="images/434206019_951704663627954_202197592447994371_n-removebg-preview.png">
 
  <style> 
- .parent-navbar{
+ .parent-navbar {
     background-color: #0306dd;
     color: white;
     display: flex;
-    padding: 10px 15px;
-    justify-content: space-between ;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky; /* Keeps it at the top */
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1000;
     }
- .nav-link{
-    color: black;
+
+.nav-link {
+    color: white;
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     }
     .children-navbar{
 
@@ -28,21 +34,24 @@
  font-family: Arial, sans-serif;  
  background:linear-gradient(white, rgb(28, 188, 241), black); ; 
  display: block;  
- justify-content: left;  
- align-items: left;   
+ justify-content: center;  
+ align-items: center;   
  margin: 0;
  min-height: 100vh; 
- padding-left: 550px;
+ padding-left: 0px;
+ position: unset;
+ padding-left: 0px;
  }  
 
- .container {  
- background-color: #fff;  
- padding: 30px;  
- border-radius: 8px;  
- box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
- width: 100%;  
- max-width: 600px;  
- } 
+ .container {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200%;
+    max-width: 600px;
+    }
 
  h1 {  
  text-align: center;  
@@ -147,16 +156,21 @@
  color: #888;  
  cursor: pointer;  
  }  
- </style>  
+ </style>
+ <nav class="parent-navbar">
+  <div class="logo-container">
+    <a href="index.html"><img src="images/cropped-whit-bg-1-259x48.png" alt="Logo"></a>
+  </div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link"><b>HOME</b></a>
+    <a href="lesson.html" class="nav-link"><b>LESSONS</b></a>
+    <a href="#" class="nav-link"><b>ABOUT US</b></a>
+  </div>
+</nav> 
+ 
+
   </head>
-  <nav class="parent-navbar">
-        <div class="children-navbar"><a href="index.html"><img style="height: 40px; width: 220px;" src="images/cropped-whit-bg-1-259x48.png" alt=""></a></div>
-        <div class="children-navbar">
-            <a href="index.html" class="nav-link"><b>HOME</b></a>
-            <a href="lesson.html" class="nav-link"><b>LESSONS</b></a>
-            <a href="" class="nav-link"><b>ABOUT US</b></a>
-        </div>
-    </nav>  
+   
 
   <body>
     

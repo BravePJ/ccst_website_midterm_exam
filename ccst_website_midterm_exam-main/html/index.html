@@ -9,25 +9,31 @@
 <style>
     body{
         margin: 0;
+        background-color: #0c1b70;
     }
     *{
         font-family: 'Segoe UI';
     }
-    .parent-navbar{
-        background-color: #0306dd;
-        color: white;
-        display: flex;
-        padding: 10px 15px;
-        justify-content: space-between ;
+    .parent-navbar {
+    background-color: #0306dd;
+    color: white;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky; /* Keeps it at the top */
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1000;
     }
     .children-navbar{
 
     }
-    .nav-link{
-        color: black;
-        text-decoration: none;
-        padding-left: 10px;
-        padding-right: 10px;
+    .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
     }
     .parent-header{
 
@@ -60,6 +66,7 @@
         border-radius: 20px;
         padding: 10px 15px;
         text-align: center;
+        background-color: rgb(15, 151, 10);
     }
     .parent-section{
         display: flex;
@@ -103,6 +110,7 @@
             <p>To develop and provide high quality academic and technical skills <br>programs that would ensure employability and productivity of <br>youngmen and women, through proper values and principles as a <br>means to achieve success with of excellence for a better quality life.</p>
         </div>
     </section>
+    <br><br>
 
     <footer style="background-color: #0306dd;">
         <p style="text-align: center; color: white;">CCST WEBSITE</p>
