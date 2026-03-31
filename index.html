@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCST Website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/434206019_951704663627954_202197592447994371_n-removebg-preview.png">
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: #0c1b70;
+    }
+    *{
+        font-family: 'Segoe UI';
+    }
+    .parent-navbar {
+    background-color: #0306dd;
+    color: white;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky; /* Keeps it at the top */
+    top: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+    }
+    .children-navbar{
+
+    }
+    .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    }
+    .parent-header{
+
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("images/building\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .children-header{
+        align-items: center;
+        justify-content: center;
+    }
+    .grand-children-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-header{
+        background-color: lightblue;
+        border: 1px solid lightblue;
+        padding: 10px 15px;
+        border-radius: 8px;
+        align-items: center;
+    }
+    .children-section{
+        border: 1px solid gray;
+        border-radius: 20px;
+        padding: 10px 15px;
+        text-align: center;
+        background-color: rgb(15, 151, 10);
+    }
+    .parent-section{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 50px;
+    }
+
+</style>
+<body>
+    <nav class="parent-navbar">
+        <div class="children-navbar"><a href="index.html"><img style="height: 40px; width: 220px;" src="images/cropped-whit-bg-1-259x48.png" alt=""></a></div>
+        <div class="children-navbar">
+            <a href="index.html" class="nav-link"><b>HOME</b></a>
+            <a href="lesson.html" class="nav-link"><b>LESSONS</b></a>
+            <a href="" class="nav-link"><b>ABOUT US</b></a>
+        </div>
+    </nav>
+    <header class="parent-header">
+        <div class="children-header">
+         <h1 style="text-align: center;">Welcome to CCST</h1>
+         <p style="text-align: center; color: black;"><b>Experience The Joy Of Learning in CCST</b></p>
+         <div class="grand-children-header">
+            <button class="button-header"><a style="text-decoration: none; color: black;"  href="Enrollment.html" >Get Started</a></button>
+         </div>
+        </div>
+    </header>
+    <section class="parent-section">
+        <div class="children-section">
+            <h3>CCST's History</h3>
+            <p>located at SNS Building <br>Aurea St. Samsonville <br>Subdivision Dau, Mabalacat City <br>Pampanga was established in 2004</p>
+        </div>
+        <div class="children-section">
+            <h3>Mission</h3>
+            <p>A center of excellence in academic and technical skills programs <br>pursuing dynamic activities parallel to global standards thereby, <br>uplifting the social economic growth of the country.</p>
+        </div>
+        <div class="children-section">
+            <h3>Vision</h3>
+            <p>To develop and provide high quality academic and technical skills <br>programs that would ensure employability and productivity of <br>youngmen and women, through proper values and principles as a <br>means to achieve success with of excellence for a better quality life.</p>
+        </div>
+    </section>
+    <br><br>
+
+    <footer style="background-color: #0306dd;">
+        <p style="text-align: center; color: white;">CCST WEBSITE</p>
+    </footer>
+</body>
+</html>
